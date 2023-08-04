@@ -1,0 +1,7 @@
+f=lambda x,c: hex(int(int(x,16)*(100-c)/30))[2:]    #当粒子寿命到70%时，颜色开始线性衰减
+if cs>70:
+    ccr,ccg,ccb=f(rgb[0],cs),f(rgb[1],cs),f(rgb[2],cs)
+else:
+    ccr,ccg,ccb=rgb[0],rgb[1],rgb[2]
+    
+return '#{0:0>2}{1:0>2}{2:0>2}'.format(ccr,ccg,ccb)
