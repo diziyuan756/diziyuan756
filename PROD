@@ -1,0 +1,10 @@
+     throws ULjException
+    {
+        PreparedStatement ri_product = conn.prepareStatement(
+            "INSERT INTO Product( prod_no, prod_name, price ) VALUES( ?, ?, ? )"
+            );
+        ORDINAL_PROD_NO = 1;
+        ORDINAL_PROD_NAME = 2;
+        ORDINAL_PROD_PRICE = 3;
+        addProduct( ri_product, 2001, "blue screw", ".03" );
+        addProduct( ri_product, 2002, "red screw", ".09" );
