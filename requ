@@ -1,0 +1,12 @@
+// import external required packages to connect to the directory service 
+ 
+public class SampleExternalProxy 
+{  
+    // Create a Client facace for serach 
+    private ExternalClientObject externalUserMgr; 
+ 
+    // Create an instance of External Directorory server Client Proxy 
+    public SampleExternalProxy() throws Exception { 
+ 
+                // User the external package to instanciate the Proxu 
+                // You need to use the client/server setting in 
