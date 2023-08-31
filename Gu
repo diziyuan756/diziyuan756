@@ -1,0 +1,3 @@
+# information on selectors.See the CDS Customization 
+# Guide for a list of possible events. 
+#selector="JMSCorrelationID=download_initiated" 
